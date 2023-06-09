@@ -28,8 +28,22 @@ image11 = Background("11.png")
 image12 = Background("12.png")
 image13 = Background("13.png")
 image14 = Background("14.png")
-# image15 = Background("15.png")
-
+image15 = Background("15.png")
+image16 = Background("16.png")
+image17 = Background("17.png")
+image18 = Background("18.png")
+image19 = Background("19.png")
+image20 = Background("20.png")
+image21 = Background("21.png")
+image22 = Background("22.png")
+image23 = Background("23.png")
+# image24 = Background("24.png")
+# image25 = Background("25.png")
+# image26 = Background("26.png")
+# image27 = Background("27.png")
+# image28 = Background("28.png")
+# image29 = Background("29.png")
+# image30 = Background("30.png")
 
 world_information = World_information()
 
@@ -127,11 +141,60 @@ def playing(current_level):
         if current_level == 14:
             world_data = world_information.world14
             current_bg = image14.image
+        if current_level == 15:
+            world_data = world_information.world15
+            current_bg = image15.image
+        if current_level == 16:
+            world_data = world_information.world16
+            current_bg = image16.image
+        if current_level == 17:
+            world_data = world_information.world17
+            current_bg = image17.image
+        if current_level == 18:
+            world_data = world_information.world18
+            current_bg = image18.image
+        if current_level == 19:
+            world_data = world_information.world19
+            current_bg = image19.image
+        if current_level == 20:
+            world_data = world_information.world20
+            current_bg = image20.image
+        if current_level == 21:
+            world_data = world_information.world21
+            current_bg = image21.image
+        if current_level == 22:
+            world_data = world_information.world22
+            current_bg = image22.image
+        # if current_level == 23:
+        #     world_data = world_information.world23
+        #     current_bg = image23.image
+        # if current_level == 24:
+        #     world_data = world_information.world24
+        #     current_bg = image24.image
+        # if current_level == 25:
+        #     world_data = world_information.world25
+        #     current_bg = image25.image
+        # if current_level == 26:
+        #     world_data = world_information.world26
+        #     current_bg = image26.image
+        # if current_level == 27:
+        #     world_data = world_information.world27
+        #     current_bg = image27.image
+        # if current_level == 28:
+        #     world_data = world_information.world28
+        #     current_bg = image28.image
+        # if current_level == 29:
+        #     world_data = world_information.world29
+        #     current_bg = image29.image
+        # if current_level == 30:
+        #     world_data = world_information.world30
+        #     current_bg = image30.image
+
         world = World(world_data)
         # DOING THE STUFF IN GAME
         events = pygame.event.get()
         mouse = pygame.mouse.get_pos()
-        testing_list = world_information.world14
+        testing_list = world_information.world22
         for event in events:
             if event.type == pygame.QUIT:
                 print(testing_list)
@@ -182,5 +245,5 @@ def playing(current_level):
         pygame.display.update()
 
 
-playing(14)
+playing(22)
 
